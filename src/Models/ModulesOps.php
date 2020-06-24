@@ -1,9 +1,9 @@
 <?php
 // MyVendor\Contactform\src\Models\ContactForm.php
-namespace Dorcas\ModulesSample\Models;
+namespace Dorcas\ModulesOps\Models;
 use Illuminate\Database\Eloquent\Model;
 
-class ModulesSample extends Model
+class ModulesOps extends Model
 {
     protected $guarded = [];
     //protected $table = 'modules-settings';

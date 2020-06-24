@@ -2,8 +2,8 @@
 
 return [
     'sample-menu1' => [
-        'title' => 'Menu 1',
-        'route' => 'sample-main',
+        'title' => 'Dorcas Meets',
+        'route' => 'ops-main',
         'icon' => 'fe fe-user'
     ]
 ];
