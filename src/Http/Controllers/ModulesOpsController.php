@@ -23,16 +23,28 @@ class ModulesOpsController extends Controller {
             'page' => ['title' => config('modules-ops.title')],
             'header' => ['title' => config('modules-ops.title')],
             'selectedMenu' => 'modules-ops',
-            'submenuConfig' => 'navigation-menu.addons.sub-menu.modules-ops.sub-menu',
+            'submenuConfig' => 'navigation-menu.modules-ops.sub-menu',
             'submenuAction' => ''
         ];
     }
 
     public function index()
     {
+    	// $this->data['availableModules'] = HomeController::SETUP_UI_COMPONENTS;
     	return view('modules-ops::index', $this->data);
     }
+    
+    public function zoom_index(Request $request)
+    {
+        $this->data['page']['title'] .= ' &rsaquo; Zoom';
+        $this->data['header']['title'] = 'Zoom Meeting';
+        $this->data['selectedSubMenu'] = 'ops-zoom';
+        $this->data['submenuAction'] = '';
+        $this->setViewUiResponse($request);
+        return view('modules-ops::zoom_index', $this->data);
+    }
 
-   
-
+    public function zoom_create() {
+        return view('modules-ops::zoom_create');
+    }
 }

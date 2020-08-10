@@ -2,11 +2,11 @@
 
 /*
 
-Contains the configuratio settings for the module in particular
+Contains the configuration settings for the module in particular
 
 
 */
 
 return [
-    'title' => 'Ops'
+    'title' => 'Operations'
 ];
